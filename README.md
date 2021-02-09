@@ -12,6 +12,22 @@ Al añadir el primer módulo se crea en el repositorio principal el archivo .git
 git submodule add git@bitbucket.org:###/### /<nombre-carpeta>
 ```
 
+## CLONAR UN PROYECTO CON SUS SUBMODULES ACTUALIZADOS
+
+```bash
+git clone --recursive git@bitbucket.org:###/### <nombre-carpeta>
+```
+
+## PARA ACTUALIZAR EL REPOSITORIO 
+
+```bash
+Para actualizar debemos ingresar a la carpeta donde esta nuestro submodule y hacer git pull
+```
+
+```bash
+git clone --recursive git@bitbucket.org:###/### <nombre-carpeta>
+```
+
 ## PROBLEMAS
 
 ```
