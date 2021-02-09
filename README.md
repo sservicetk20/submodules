@@ -9,7 +9,7 @@ Los submodules de git permiten incluir un repositorio en otro en cualquier ubica
 Al añadir el primer módulo se crea en el repositorio principal el archivo .gitmodules, en el que se listan todos los módulos que se han añadido.
 
 ```bash
-git submodule add git@bitbucket.org:###/### /(ubicación del sumbodule)
+git submodule add git@bitbucket.org:###/### /<nombre-carpeta>
 ```
 
 ## PROBLEMAS
@@ -22,8 +22,8 @@ Algunos de los problemas mas usuales que se pueden presentar es que te hayas equ
 
 ```bash
 1.Eliminar el archivo .gitmodules.
-2.rm -rf .git/modules/ruta-submodules
-3.git rm --cached ruta-submodules
+2.rm -rf .git/modules/<nombre-carpeta>
+3.git rm --cached <nombre-carpeta>
 ```
 
 ## License
