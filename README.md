@@ -24,10 +24,6 @@ git clone --recursive git@bitbucket.org:###/### <nombre-carpeta>
 Para actualizar debemos ingresar a la carpeta donde esta nuestro submodule y hacer git pull
 ```
 
-```bash
-git clone --recursive git@bitbucket.org:###/### <nombre-carpeta>
-```
-
 ## PROBLEMAS
 
 ```
