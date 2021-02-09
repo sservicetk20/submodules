@@ -1,2 +1,30 @@
-# submodules
-creando un submodulo en git en un proyecto
+# Creando un submodule de git 
+
+Los submodules de git permiten incluir un repositorio en otro en cualquier ubicación. Incluir por ejemplo una librería de javascript, modelos etc en un proyecto web como un módulo permite funcionar con su última versión fácilmente, sin necesidad de preocuparse por sustituir versiones manualmente: basta actualizar el repositorio.
+
+
+
+## AÑADIR UN MÓDULO A UN REPOSITORIO
+
+Al añadir el primer módulo se crea en el repositorio principal el archivo .gitmodules, en el que se listan todos los módulos que se han añadido.
+
+```bash
+git submodule add git@bitbucket.org:###/### /(ubicación del sumbodule)
+```
+
+## PROBLEMAS
+
+```
+
+Algunos de los problemas mas usuales que se pueden presentar es que te hayas equivocado ingresando la ruta o algún parametro equivocado en este caso debemos eliminar el submodule 
+
+```
+
+```bash
+1.Eliminar el archivo .gitmodules.
+2.rm -rf .git/modules/ruta-submodules
+3.git rm --cached ruta-submodules
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
